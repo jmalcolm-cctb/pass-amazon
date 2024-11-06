@@ -2,33 +2,33 @@ pipeline{
 
 agent {
 docker {
-image &#39;node:18.17.1-alpine3.18&#39;
+image "node:18.17.1-alpine3.18"
 }
 }
 
 stages{
-stage(&#39;Building&#39;){
+stage("Building"){
 steps{
-echo &#39;This is Building.&#39;
+echo "This is Building."
 }
 }
 
-stage(&#39;Testing&#39;){
+stage("Testing"){
 steps{
 
-echo &#39;This is testing.&#39;
-}
-}
-
-stage(&#39;Staging&#39;){
-steps{
-echo &#39;This is Staging.&#39;
+echo "This is testing."
 }
 }
 
-stage(&#39;Production&#39;){
+stage("Staging"){
 steps{
-echo &#39;This is Production.&#39;
+echo "This is Staging."
+}
+}
+
+stage("Production"){
+steps{
+echo "This is Production."
 }
 }
 }
