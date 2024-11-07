@@ -25,7 +25,7 @@ echo "This is testing"
 
 stage("Staging"){
 steps{
-sh 'firebase deploy -P password-generator-staging --token "$FIREBASE_DEPLOY_TOKEN"'
+sh 'firebase deploy -P break-test --token "$FIREBASE_DEPLOY_TOKEN"'
 }
 }
 
