@@ -10,7 +10,7 @@ FIREBASE_DEPLOY_TOKEN = credentials("firebase-token")
 }
 
 stages{
-stage("Building"){
+stage("Building it now"){
 steps{
 sh "npm install -g firebase-tools"
 }
